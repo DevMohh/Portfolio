@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/0be2e7f26a.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js" integrity="sha512-7oLWozxPMJiFirBi9qEQbQ285nF7LZeMXDtBy5z48TZOycqqaLZL27zPG+r2MF0/KNVjH6AUMj11tLi78kIHxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="styles.css" />
+
+    
+    <title>Dev Moh | Web Developer</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <div class="navigate">
+      <h1>DEV MOH</h1>
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <div class="moon">
+          <button id="themeButton"><i class="fa-regular fa-moon fa-sm"></i></button>
+        </div>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+    </div>
+    
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <img
+        src="Secure data.gif"
+        alt="dev moh"
+        loading="lazy"
+        class="hero-img"
+        id="heroImage"
+      />
+      <div class="bio animate__animated animate__shakeX">
+        <h1 class="bio-title">I'M MOH</h1>
+        <p class="bio-text">
+          A web developer turning ideas into reality with HTML, CSS, and JavaScript. I'm passionate about crafting stylish and functional websites that leave a lasting impact. Let's connect and create something amazing together!
+        </p>
+      </div>
+    </section>
+
+    <!-- More about -->
+    <section class="more-about">
+      <h2>Experience</h2>
+      <p>
+        My journey began by mastering the intricacies of HTML, allowing me to structure content with precision and semantic clarity. From there, I delved into the art of CSS, skillfully crafting captivating designs and layouts that seamlessly adapt across devices. 
+        JavaScript became my ally in enhancing user experiences and interactivity. Leveraging its power, I've developed dynamic features, interactive elements, and seamless animations that captivate and engage visitors. 
+        My experience extends beyond individual languages; I've navigated the intricate dance between them to create harmonious web ecosystems. By seamlessly integrating HTML, CSS, and JavaScript, I've created fluid and cohesive user experiences that leave a lasting impact. 
+        With each project, I've embraced challenges head-on, refining my problem-solving abilities and consistently delivering high-quality results. 
+      </p>
+      <p>
+        Working alongside designers, UX experts, and fellow developers, I've embraced a team-centric approach that brings out the best in every project. 
+        My journey as a web developer continues to evolve, fueled by my dedication to continuous learning and staying up-to-date with industry trends. With a solid foundation in HTML, CSS, and JavaScript, I'm excited to embark on new challenges and contribute to creating exceptional web experiences.
+      </p>
+      </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="html-5.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="css.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="js.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="To-do List.png"
+            alt="To-do list"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">To-do List</h3>
+          <p class="project-details">
+            This to-do list empowers users to effortlessly manage tasks: create, edit, and delete. Experience productivity in style with its dynamic dark and light modes for personalized task management.
+          </p><br>
+          <a href="../todolist/indexx.html" target="_blank" class="project-link">Check it Out</a>
+          <br>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="CarHub.png"
+            alt="CarHub"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">CarHub</h3>
+          <p class="project-details">
+            CarHub is your online luxury car hub, spotlighting prestigious brands like Ferrari and Lamborghini. Explore our top-notch collection and user-friendly interface for an exceptional automotive experience.
+          </p><br>
+          <a href="../CarHub/index.html" target="_blank" class="project-link">Check it Out</a>
+          <br>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="Music Player.png"
+            alt="music-player"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Music Player</h3>
+          <p class="project-details">
+            MusicBeat is your ultimate online music player, offering a seamless platform to groove to your favorite tunes. Discover, play, and enjoy an immersive musical journey with ease.
+          </p><br>
+          <a href="../Music Player/index.html" target="_blank" class="project-link">Check it Out</a>
+          <br>
+        </div>
+      </div>
+    </section>
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2>Get In Touch</h2><br>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylnggw" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+      <a href="https://www.twitter.com/" 
+      target="_blank"
+      class="Social"
+      ><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+
+
+      <a href="https://www.instagram.com/mbdon_" 
+      target="_blank"
+      class="Social"
+      ><i class="fa-brands fa-instagram fa-lg"></i></a>
+
+
+      <a href="https://www.linkedin.com/in/muhammad-bashir-56b208282" 
+      target="_blank"
+      class="Social"
+      ><i class="fa-brands fa-linkedin fa-lg"></i></a>
+
+
+      <a href="https://github.com/DevMohh" 
+      target="_blank"
+      class="Social"
+      ><i class="fa-brands fa-github fa-lg"></i></a>
+      
+    </div>
+
+    <!-- Scroll to top -->
+    <i class="fa-solid fa-arrow-up fa-2xl" id="scroll"></i>
+
+    <!-- Website scripts -->
+    <script src="app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
