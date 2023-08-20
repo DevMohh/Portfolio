@@ -65,6 +65,10 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
+.dark {
+  background-color: var(--dark-color);
+}
+
 .dark .navigate{
   background-color: var(--dark-color-2);
 }
@@ -345,6 +349,7 @@ body {
 /* Contacts section */
 .contact {
   background-color: var(--secondary-color);
+  margin-bottom: 24px;
 }
 
 .dark .contact{

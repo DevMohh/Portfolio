@@ -35,6 +35,7 @@ scroll.addEventListener("click", () => {
 // checkbox.addEventListener("change", () => {
 //   document.body.classList.toggle("dark")
 // })
+const getInTouchForm = document.querySelector(".contact-form-container");
 const themeButton = document.getElementById('themeButton');
 const navigation = document.querySelector('.navigate');
 const heroSection = document.querySelector('.hero');
@@ -44,28 +45,26 @@ const contactSection = document.getElementById('contact'); // Get the contact se
 
 let isNightMode = false; // Track the current mode
 
-// Toggle hero image based on day or night mode
-if (isNightMode) {
-  heroImage.src = '/developer-portfolio/assets/images/Gif.gif';
-} else {
-  heroImage.src = '/developer-portfolio/assets/images/Secure data.gif';
-}
-// Toggle the mode
-isNightMode = !isNightMode;
-
 // Dark mode toggle function
 function toggleDarkMode() {
+  // Toggle the mode
+  isNightMode = !isNightMode;
+  
   document.body.classList.toggle('dark');
   navigation.classList.toggle('dark');
   heroSection.classList.toggle('dark');
-
+  
   // Toggle background color of the contact section
-  if (isNightMode) {
-    contactSection.style.backgroundColor = 'var(--secondary-color)';
+  // ... and Toggle hero image based on day or night mode
+if (isNightMode) {
+  heroImage.src = '/assets/Gif.gif';
+  contactSection.style.backgroundColor = 'var(--dark-color)';
+    getInTouchForm.style.boxShadow = '0 3px 10px var(--primary-shadow)'
   } else {
-    contactSection.style.backgroundColor = 'var(--dark-color)';
+    heroImage.src = '/assets/SecureData.gif';
+    contactSection.style.backgroundColor = 'var(--secondary-color)';
+    getInTouchForm.style.boxShadow = '0 3px 10px var(--secondary-shadow)'
   }
-
 
   // Toggle moon and sun icons
   if (moonIcon.classList.contains('fa-moon')) {
